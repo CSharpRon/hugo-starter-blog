@@ -1,0 +1,51 @@
+name: website-deploy-main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v1
+      env:
+        message: ${{ github.event.head_commit.message }}
+
+    - name: Install Hugo
+      run: sudo snap install hugo --channel=extended
+
+    - name: Download themes
+      run: git submodule update --init --recursive
+
+    - name: Clone gh pages website repository (destination) and configure
+      run: |
+        git clone https://github.com/${{ secrets.USERNAME }}/${{ secrets.GHPAGESREPO }} public/
+        cd public
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git remote rm origin
+        git remote add origin https://${{ secrets.USERNAME }}:${{ secrets.TOKEN }}@github.com/${{ secrets.USERNAME }}/${{ secrets.GHPAGESREPO }}
+
+    - name: Preserve README and Clean Deploy
+      run: |
+        mkdir temp
+        cd public
+        mv README.md ../temp & >/dev/null
+        mv CNAME ../temp & >/dev/null
+        rm -r *
+        mv ../temp/* .
+
+    - name: Run Hugo Build
+      run: hugo
+
+    - name: Git Push
+      run: |
+        cd public
+        git add .
+        git commit -m "GitHub Action: $message"
+        git push --set-upstream origin main

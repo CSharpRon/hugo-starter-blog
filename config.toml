@@ -1,0 +1,26 @@
+baseURL = "https://username.github.io/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "bilberry-hugo-theme"
+
+[author]
+    name = "Snoopy"
+
+[params]
+    enableBlogPost = "true"
+    customImage = "/images/avatar.png"
+
+[languages]
+    [languages.en]
+        title = "Snoopy's Blog"
+        subtitle = "Cookies Optional"
+
+[menu]
+    [[menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/posts"
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"

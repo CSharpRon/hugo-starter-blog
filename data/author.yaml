@@ -1,0 +1,18 @@
+# Your information
+name: "Snoopy"
+nickname: "AstroPup"
+image: "images/avatar.png"
+
+# Greeting before name
+greeting: "Hi, I'm"
+
+# Contact Info for footer
+contactInfo:
+  email: "snoopy@moon.gov"
+  phone: ""
+
+# Personal Summary
+summary:
+- I am a Pup
+- I go to the Moon
+- Woof

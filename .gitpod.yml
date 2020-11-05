@@ -1,0 +1,7 @@
+# Command to start on workspace startup
+tasks:
+  - init: brew install hugo
+# Ports to expose on workspace startup
+ports:
+  - port: 1313 # For Hugo local development
+    onOpen: open-preview
