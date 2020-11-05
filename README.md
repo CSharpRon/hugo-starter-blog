@@ -60,6 +60,7 @@ You don't want to worry about building the code for your website and then deploy
 - *New Secret* -> USERNAME (type in your GitHub username)
 - *New Secret* -> GHPAGESREPO (type in the repository you created in Task 2 e.g., AstroTester.github.io)
 - *New Secret* -> TOKEN (paste in the Personal Access Token from Task 3)
+- Click on the Actions tab and accept running workflows from a fork to complete the automation
 - Click on the Code tab to return to the repository
 
 ### Task 5: Set Gitpod Access Controls
