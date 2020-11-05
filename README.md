@@ -15,12 +15,12 @@ Let's get started!
 ---   
 
 ## Checklist
-To help you keep track of where you are, follow along with this checklist:
+To help you keep track of where you are, follow along with this checklist (sorry you can't just click these boxes, but check each of these off in your head):
 
 - [x] Discover water on the Moon
 - [ ] Create a new GitHub pages repository with the name: YourUsername.github.io
 - [ ] Fork this repository
-- [ ] Set the GitHub Secrets for *Username* and *Repository*
+- [ ] Set the GitHub Secrets for *USERNAME* and *GHPAGESREPO*
 - [ ] Open the repository in Gitpod
 - [ ] Modify the config.toml from Gitpod
 - [ ] Change the theme from Gitpod
