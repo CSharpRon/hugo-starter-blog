@@ -24,15 +24,15 @@ Let's get started!
 To help you keep track of where you are, follow along with this checklist (sorry you can't just click these boxes, but check each of these off in your head):
 
 - [x] [Discover water on the Moon](https://www.usatoday.com/story/news/nation/2020/10/26/nasa-announce-an-exciting-new-discovery-moon-monday/6039412002/)
-- [ ] Fork this repository
-- [ ] Create a new public GitHub repository with the name **YourUsername.github.io** and initialize with a README
-- [ ] Generate a Personal Access Token with admin:repo_hook, repo, workflow privileges
-- [ ] Set the GitHub Secrets for *TOKEN*, *USERNAME* and *GHPAGESREPO*
-- [ ] Give Gitpod GH Write access
-- [ ] Open the repository in Gitpod
-- [ ] Modify the config.toml from Gitpod
-- [ ] Change the theme from Gitpod
-- [ ] Add your first post from Gitpod!
+- [ ] [Fork this repository](#task-0-access)
+- [ ] [Create a new public GitHub repository with the name **YourUsername.github.io** and initialize with a README](#task-2-new-repo)
+- [ ] [Generate a Personal Access Token with admin:repo_hook, repo, workflow privileges](#task-3-personal-access-token)
+- [ ] [Set the GitHub Secrets for *TOKEN*, *USERNAME* and *GHPAGESREPO*](#task-4-setting-the-secrets)
+- [ ] [Give Gitpod GH Write access](#task-5-set-gitpod-access-controls)
+- [ ] [Open the repository in Gitpod](#task-6-launch-gitpod)
+- [ ] [Modify the config.toml from Gitpod](#task-7-modify-the-hugo-config)
+- [ ] [Change the theme from Gitpod](#task-8-change-the-theme)
+- [ ] [Add your first post from Gitpod!](#final-task-add-you-first-post)
 
 ### Task 0: Access
 Of course, make sure you are logged in to GitHub and have logged in to [Gitpod](https://gitpod.io) at this point.   
