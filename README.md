@@ -24,15 +24,15 @@ Let's get started!
 To help you keep track of where you are, follow along with this checklist (sorry you can't just click these boxes, but check each of these off in your head):
 
 - [x] [Discover water on the Moon](https://www.usatoday.com/story/news/nation/2020/10/26/nasa-announce-an-exciting-new-discovery-moon-monday/6039412002/)
-- [ ] [Fork this repository](#task-0-access)
-- [ ] [Create a new public GitHub repository with the name **YourUsername.github.io** and initialize with a README](#task-2-new-repo)
-- [ ] [Generate a Personal Access Token with admin:repo_hook, repo, workflow privileges](#task-3-personal-access-token)
-- [ ] [Set the GitHub Secrets for *TOKEN*, *USERNAME* and *GHPAGESREPO*](#task-4-setting-the-secrets)
-- [ ] [Give Gitpod GH Write access](#task-5-set-gitpod-access-controls)
-- [ ] [Open the repository in Gitpod](#task-6-launch-gitpod)
-- [ ] [Modify the config.toml from Gitpod](#task-7-modify-the-hugo-config)
-- [ ] [Change the theme from Gitpod](#task-8-change-the-theme)
-- [ ] [Add your first post from Gitpod!](#final-task-add-you-first-post)
+- [ ] [1. Fork this repository](#task-0-access)
+- [ ] [2. Create a new public GitHub repository with the name **YourUsername.github.io** and initialize with a README](#task-2-new-repo)
+- [ ] [3. Generate a Personal Access Token with admin:repo_hook, repo, workflow privileges](#task-3-personal-access-token)
+- [ ] [4. Set the GitHub Secrets for *TOKEN*, *USERNAME* and *GHPAGESREPO*](#task-4-setting-the-secrets)
+- [ ] [5. Give Gitpod GH Write access](#task-5-set-gitpod-access-controls)
+- [ ] [6. Open the repository in Gitpod](#task-6-launch-gitpod)
+- [ ] [7. Modify the config.toml from Gitpod](#task-7-modify-the-hugo-config)
+- [ ] [8. Change the theme from Gitpod](#task-8-change-the-theme)
+- [ ] [9. Add your first post from Gitpod!](#final-task-add-you-first-post)
 
 ### Task 0: Access
 Of course, make sure you are logged in to GitHub and have logged in to [Gitpod](https://gitpod.io) at this point.   
