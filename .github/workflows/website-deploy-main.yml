@@ -12,9 +12,7 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout@v1
-      env:
-        message: ${{ github.event.head_commit.message }}
+    - uses: actions/checkout@v2
 
     - name: Install Hugo
       run: sudo snap install hugo --channel=extended
@@ -31,19 +29,21 @@ jobs:
         git remote rm origin
         git remote add origin https://${{ secrets.USERNAME }}:${{ secrets.TOKEN }}@github.com/${{ secrets.USERNAME }}/${{ secrets.GHPAGESREPO }}
 
-    - name: Preserve README and Clean Deploy
+    - name: Preserve files for Clean Deploy
       run: |
         mkdir temp
         cd public
-        mv README.md ../temp & >/dev/null
-        mv CNAME ../temp & >/dev/null
-        rm -r *
-        mv ../temp/* .
+        [ ! -f README.md ] || mv README.md ../temp
+        [ ! -f CNAME ] || mv CNAME ../temp
+        rm -rf *
+        [ ! -d ../temp ] || [[ ! $(ls -A ../temp) ]] || mv ../temp/* .
 
     - name: Run Hugo Build
       run: hugo
 
     - name: Git Push
+      env:
+        message: ${{ github.event.head_commit.message }}
       run: |
         cd public
         git add .
